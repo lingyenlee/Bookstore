@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html> -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="jumbotron">
+                <div class="storename">
+                    <h1>Nameless Bookstore</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <div class="search">
+                <input type="text" placeholder="Search book title" v-model="searchBook">
+                <select>
+                    <option value="All">Choose Language</option>
+                    <option>English</option>
+                    <option>Catalan</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+            <div class="flip-box-wrapper">
+
+                <div v-for="book in filteredBooks" class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img v-bind:src="book.cover">
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>{{book.title}}</h3>
+                            <p>{{book.description}}</p>
+                            <p class="lang">Language: {{book.language}}</p>
+                            <div class="info-btn">
+                                <button v-bind:href="book.detail" v-bind:data-caption="book.title"
+                                    data-fancybox="gallery" v-bind:data-thumb="book.detail" data-width="1100"
+                                    class="btn btn-primary" type="button">More Info</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</body>
+
+<!-- </html> -->

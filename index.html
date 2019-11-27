@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nameless Bookstore</title>
+    <meta name="Bookstore" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="/style/styles.css">
+
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+        <div class="overlay"></div>
+        <div class="header">
+            <img src="images/books.jpg">
+            <div class="header-text">
+                <h1>Nameless Bookstore</h1>
+            </div>
+        </div>
+        <!-- <div class="button-row"> -->
+        <div class="filter-row">
+            <div id="filters" class="button-group">
+                <button class="button is-checked" data-filter="*">All</button>
+                <button class="button" data-filter=".es">Spanish</button>
+                <button class="button" data-filter=".en">English</button>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <div class="search-row">
+            <div class="searchBox">
+                <input type="text" placeholder="Search book title" class="quicksearch">
+            </div>
+        </div>
+
+        <div class="gridWrap">
+            <div id="noResultMsg">
+                <h3>No result. Please search again.</h3>
+            </div>
+            <div class="grid flip-box-wrapper">
+
+                <!-- dynamic display of books -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
